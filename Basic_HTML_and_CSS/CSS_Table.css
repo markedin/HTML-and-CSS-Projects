@@ -1,0 +1,19 @@
+table{
+	border: 1px solid DarkGray;
+}
+
+td:hover{
+	background-color: gold;
+	color:black;
+}
+
+tr, th{
+	background-color:GhostWhite;
+	color: LightSlateGray;
+}
+
+tr, td{
+	background-color: GhostWhite;
+	color: LightSlateGray;
+}
+
