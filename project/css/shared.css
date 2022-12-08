@@ -170,7 +170,7 @@ section {
     color: #fff;
     letter-spacing: 5pt;
     word-spacing: 21pt;
-    font-size: .2em;
+    font-size: 4.5em;
     text-align: left;
     font-family: impact, sans-serif;
     line-height: 2;
@@ -365,7 +365,7 @@ section {
 
 @media (min-width: 768px) {
     .container {
-        font-size: 750px;
+        width: 750px;
     }
 }
 
