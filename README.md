@@ -4,8 +4,8 @@ This repository will contain my HTML and CSS Projects.
 
 <h1>Projects</h1>
 <ul>
-<li>Space Station Site</li>
-<li>Movie Theater Site</li>
+<li>[Space Station Site](https://github.com/markedin/HTML-and-CSS-Projects/tree/main/project)</li>
+<li>[Movie Theater Site](https://github.com/markedin/HTML-and-CSS-Projects/tree/main/bootstrap4_project)</li>
 </ul>
 
 <h1>Space Station Site</h1>
