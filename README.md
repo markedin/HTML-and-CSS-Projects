@@ -6,7 +6,7 @@ Projects
 Space Station Site
 Movie Theater Site
 
-Space Station Site
+<h1>Space Station Site
 
 This page is an example home page for a Space travel company. It's styled using CSS and contains a navbar, image containers, and a form.
 
