@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>Hello, world!</title>
+    </head>
+    <!-- STYLE -->
+    <style>
+    body{
+        margin-left:10px;
+        margin-top:100px;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        filter: grayscale(10);
+        border: 2px solid black;
+         border-radius: 25px;
+    }
+    footer {
+        text-align: center;
+        padding: 3px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+    table, th, td {
+        border:2px solid black;
+        padding: 15px;
+        text-align: center;
+    }
+    th {
+        background-color: blue;
+        color: white
+    }
+    .container {
+        position: relative;
+        text-align: center;
+        color: gold;
+    }
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index:999;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .navbar a:hover {
+        background: #ddd;
+        color: black;
+    }
+
+    .main {
+        padding: 16px;
+        margin-top: 30px;
+        /*height: 1500px; /* Used in this example to enable scrolling */
+    }
+    .column {
+        float: left;
+        height:200px;
+        width: 49%;
+        color:purple;
+    }
+
+/* Clear floats after the columns */
+    .row:after {
+        float:right;
+        content: "";
+        display: table;
+        clear: both;
+        height:50px;
+        width:49%;
+    }
+    p:hover, a:hover {
+        background-color: yellow;
+    }
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .container:hover .image {
+        opacity: 0.3;
+    }
+
+    .container:hover .middle {
+        opacity: 1;
+    }
+
+    .text {
+        background-color: #04AA6D;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+    .video_container {
+        position:relative;
+        text-align:center;
+        color:white;
+    }
+    .center {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+    </style>
+    <!-- BODY -->
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <body>
+        
+        <div class="info" style="text-align:center">
+            <h2>All about dogs!</h2>
+        </div>
+
+
+       <!-- container -->
+        <div class="container my-5">
+            <img src="dog.jpg" alt="dog" class="image">
+            <div class="centered">This is one of my favorite dog photos!</div>
+            <dive class="middle">
+                <div class="text">This is billy</div>
+            </dive>
+        </div>
+
+         <!-- Columns -->
+        <div class="row">
+            <div class="column" style="background-color: #aaa; margin-left:5px;">
+                <h2>Pros to owning a dog</h2>
+                <p>Most people would say that the day they met their dog was one of the best days of
+                    their life! There are many pros to owning a dog, including  but not limited to: Always having a friend
+                    to do activities with, having a cuddle buddy to watch tv with after a long day at work, and always being
+                    greeted with a smile when getting home.
+                </p>
+            </div>
+            <div class="column" style="background-color: #bbb;">
+                <h2>Cons to owning a dog</h2>
+                <p>Some people do not like dogs, which leads me to believe that they had a bad interaction
+                    with a poorly trained dog during their child hood. The only cons I can think of is
+                    that they require an active owner to stay healthy! I wouldn't reccomend most dog breeds for 
+                    people with inactive lifestyles. If youd like to check out dogs that are better suited for inactive
+                    lifestyles, please click below!
+                </p>
+                <a href="https://topdogtips.com/lazy-dog-breeds/">Dogs for inactive owners!</a>
+            </div>
+        </div>
+
+          <!-- Table -->
+        <div>
+            <h2>Dog Rankings</h2>
+
+            <table style="width:50%" class="my-5">
+            <tr>
+                <th>Border Collie</th>
+                <th>Austrailian Shepard</th>
+                <th>Pitbull</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            </table>
+        </div>
+
+        <!--VIDEO-->
+        <div class="video_container">
+            <video autoplay muted loop>
+                <source src="bordercollie.mp4" type="video/mp4">
+            
+                Your browser does not support the video tag.
+            </video>
+            <div class="center">Look at this beautiful pup!</div>
+        </div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+      <!-- Footer -->
+    <footer>
+        <p>Author: Mark Edin</p>
+        <p><a href="mailto:mark@example.com">mark@example.com</a></p>
+    </footer>
+
+</html>
